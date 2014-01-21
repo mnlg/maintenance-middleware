@@ -85,13 +85,13 @@ class MaintenanceTest extends \PHPUnit_Framework_TestCase
         $app->get('/', function () {
             echo "Success";
         });
-        $mw = new \Mnlg\Middleware\Maintenance(function() {
-            echo 'Maintenance';
+        $mw = new \Mnlg\Middleware\Maintenance(function() use ($app) {
+            $app->response()->body('Maintenance');
         });
         $mw->setApplication($app);
         $mw->setNextMiddleware($app);
         $mw->call();
         $this->assertEquals(200, $app->response()->status());
-        $this->assertNotEquals('Maintenance', $app->response()->body());
+        $this->assertEquals('Maintenance', $app->response()->body());
     }
 }
