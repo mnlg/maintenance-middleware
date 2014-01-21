@@ -24,7 +24,7 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-class ContentNegotiationTest extends \PHPUnit_Framework_TestCase
+class MaintenanceTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Test maintenance middleware when 'maintenance' mode is not enabled
