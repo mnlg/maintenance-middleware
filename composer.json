@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Maintenance middleware for the Slim framework",
     "keywords": ["slim", "middleware", "maintenance"],
-    "homepage": "http://github.com/codeguy/Slim",
+    "homepage": "https://github.com/mnlg/maintenance-middleware",
     "license": "MIT",
     "require": {
         "php": ">=5.3.0",
